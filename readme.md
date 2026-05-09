@@ -136,6 +136,8 @@ After this, Ubuntu should feel close to the repo's terminal-only setup:
 
 ## GIT CONFIG
 
+```bash
 git config --global user.email "twój_email@example.com"
 git config --global user.name "NAME NAME"
 ssh-keygen -t ed25519 -C "twój_email@example.com"
+```
