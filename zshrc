@@ -26,6 +26,19 @@ else
   compinit
 fi
 
+
+# ---------------------------------
+# History
+#
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY
+
 # ---------------------------------
 # CLI aliases
 # ---------------------------------
@@ -49,7 +62,7 @@ alias pi='pnpm install'
 alias padd='pnpm add'
 
 alias doco='docker compose'
-`
+
 # ---------------------------------
 # Plugins
 # ---------------------------------
