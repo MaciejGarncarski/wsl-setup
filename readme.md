@@ -86,12 +86,17 @@ alias gadd='git add .'
 alias gdc='git diff --cached'
 alias gdom='git diff origin/main'
 alias glog='git log --oneline'
+alias gc='git commit -m'
+alias gca='git commit -am'
+alias gcam='git commit --amend'
+alias gp='git push'
 
+alias p='pnpm'
 alias pi='pnpm install'
 alias padd='pnpm add'
 
 alias doco='docker compose'
-
+`
 # ---------------------------------
 # Plugins
 # ---------------------------------
