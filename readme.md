@@ -91,7 +91,7 @@ alias gca='git commit -am'
 alias gcam='git commit --amend'
 alias gp='git push'
 
-alias p='pnpm'
+alias pn='pnpm'
 alias pi='pnpm install'
 alias padd='pnpm add'
 
