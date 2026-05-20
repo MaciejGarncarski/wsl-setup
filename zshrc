@@ -63,6 +63,8 @@ alias padd='pnpm add'
 
 alias doco='docker compose'
 
+alias shadcn='npx shadcn@latest'
+
 # ---------------------------------
 # Plugins
 # ---------------------------------
