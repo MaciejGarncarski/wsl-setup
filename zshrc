@@ -26,6 +26,12 @@ else
   compinit
 fi
 
+# ---------------------------------
+# History search keybinds
+# ---------------------------------
+
+bindkey "${terminfo[kcuu1]}" history-beginning-search-backward
+bindkey "${terminfo[kcud1]}" history-beginning-search-forward
 
 # ---------------------------------
 # History
@@ -36,14 +42,12 @@ HISTSIZE=100000
 SAVEHIST=100000
 
 # Share history across sessions immediately
-setopt SHARE_HISTORY          # Automatically imports/exports commands in real time
-setopt HIST_EXPIRE_DUPS_FIRST # Delete duplicates first when HISTFILE size exceeds limit
-setopt HIST_IGNORE_DUPS       # Don't record an entry that was just recorded
-setopt HIST_IGNORE_ALL_DUPS   # Delete old duplicate entry if new entry is a duplicate
-setopt HIST_FIND_NO_DUPS      # Do not display duplicates when searching history
-setopt HIST_IGNORE_SPACE      # Don't record commands starting with a space
-setopt HIST_SAVE_NO_DUPS      # Don't write duplicate entries in the history file
-setopt HIST_REDUCE_BLANKS     # Remove superfluous blanks before recording
+setopt SHARE_HISTORY # Automatically imports/exports commands in real time
+setopt HIST_IGNORE_DUPS # Don't record an entry that was just recorded
+setopt HIST_FIND_NO_DUPS # Do not display duplicates when searching history
+setopt HIST_IGNORE_SPACE # Don't record commands starting with a space
+setopt HIST_SAVE_NO_DUPS # Don't write duplicate entries in the history file
+setopt HIST_REDUCE_BLANKS # Remove superfluous blanks before recording
 
 # ---------------------------------
 # CLI aliases
@@ -70,7 +74,7 @@ alias padd='pnpm add'
 
 alias doco='docker compose'
 
-alias shadcn='npx shadcn@latest'
+alias shadcn='pnpm dlxc shadcn@latest'
 
 # ---------------------------------
 # Plugins
