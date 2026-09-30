@@ -110,3 +110,5 @@ ZSH_HIGHLIGHT_STYLES[option]='fg=yellow'
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=magenta'
 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PATH="/home/maciek/.bun/bin:$PATH"
